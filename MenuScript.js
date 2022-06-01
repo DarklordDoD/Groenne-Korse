@@ -10,5 +10,14 @@ function myFunction() {
   }
 }
 
+window.addEventListener("resize", () => {
+	if (window.matchMedia("(min-width: 768px)").matches) {
+		document.getElementById("myLinks").style.display = "flex";
+	} else {
+		document.getElementById("myLinks").style.display = "none";
+	}
+});
+
+
 
 
