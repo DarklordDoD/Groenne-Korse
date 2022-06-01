@@ -22,110 +22,68 @@ body
 /*--------------------------------------------------------------------*/	
 /*----------------------------(Header)--------------------------------*/
 
-#menuboks
+
+
+
+#mylinks
 {
-	border: solid 4px;
-	border-color: purple;
+  display: none;
 }
 
 
-.navbar
-{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	background-color: #333;
-	color: white;
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: #555;
+  height: 500px;
+  color: white;
+  border-radius: 10px;
 }
 
-.brand-title 
-{
-font-size: 40px;
-margin: 10px;
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
 }
 
-.navbar-links ul
-{
-	margin: 0px;
-	padding: 0px;
-	display: flex;
+.topnav #myLinks {
+  display: none;
 }
 
-.navbar-links li
-{
-	list-style: none;
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
 }
 
-.navbar-links li a
-{
-	text-decoration: none;
-	color: white;
-	padding: 50px;
-	display: block;
+.topnav a.icon {
+  background: #FFFFFF;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
-.navbar-links li:hover
+.menuboks a:hover
 {
-	background-color: #555;
 	
+  background-color: #ddd;
+  color: black;
 }
 
-.toggle-button
-{
-	position: absolute;
-	top: 50px;
-	right: 65px;
-	display: none;
-	flex-direction: column;
-	justify-content: space-between;
-	width: 30px;
-	height: 21px;
+
+.active {
+  background-color: #04AA6D;
+  color: white;
 }
 
-.toggle-button .bar
-{
-	height: 3px;
-	width: 100%;
-	background-color: white;
-	border-radius: 10px;
-}
-/*---------------------------------------------------------------------*/
-/*----------------------------(Sprog)----------------------------------*/
 
-#knapS
-{
-	position: fixed;
-	right: 0px;
-	height: 35px;
-	background-color: #555;
-	top: 120px;
-}
 
-#sprogText 
-{
-	margin: 0px;
-	padding: 0px;
-	color: white;
-}
 
-/*---------------------------------------------------------------------*/
-/*----------------------------(Mode)----------------------------------*/
 
-#knapM
-{
-	position: fixed;
-	right: 0px;
-	height: 35px;
-	background-color: #555;
-	top: 156px;
-}
 
-#modeText 
-{
-	margin: 0px;
-	padding: 0px;
-	color: white;
-}
 
 /*---------------------------------------------------------------------*/
 /*----------------------------(Body)----------------------------------*/
@@ -134,6 +92,7 @@ margin: 10px;
 {
 	border: solid 4px;
 	border-color: purple;
+	
 }
 
 /*---------------------------------------------------------------------*/
@@ -163,14 +122,7 @@ margin: 10px;
 @media screen and (max-width: 767px) and (min-width: 428px)
 {
 	body{background-color: red}
-	
 	.toggle-button{display: flex}
-	.navbar-links{/*display: none*/ width: 100%}
-	.navbar {flex-direction: column; align-items: flex-start}
-	.navbar-links ul{flex-direction: column; width: 100%;}
-	.navbar-links li{text-align: center;}
-	.navbar-links li a{padding: 20px 5px;}
-	.navbar-links.active{display: flex}
 }
 
 
@@ -178,7 +130,8 @@ margin: 10px;
 /*Tablet*/
 @media screen and (min-width: 768px)
 {
-	body{background-color: yellow} 	
+	body{background-color: yellow} 
+	.topnav a.icon{display:none;}	
 	
 	
 	
@@ -190,7 +143,8 @@ margin: 10px;
 /*PC*/
 @media screen and (min-width: 1700px)
 {
-	body{background-color: green} 
+	body{background-color: green}
+	.topnav a.{display:none;}
 }
 
 

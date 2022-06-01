@@ -2,36 +2,29 @@
 <html>
 <head>
 <meta charset="utf-8">
-<link rel="stylesheet" type="text/css" href="Main-Stylesheet.css">
-<script src="MenuScript.js" defer></script>
+<link rel="stylesheet" type="text/css" href="../../Hjemmesiden/Main-Stylesheet.css">
+<script src="../../Hjemmesiden/MenuScript.js" defer></script>
 <title>Homepage</title>
 </head>
 
 <body>
-	<nav class="navbar">
-		<div class="brand-title" id="brandTitle">Mærke Navn</div>
-		<a href="#" class="toggle-button">
-			<span class="bar"></span>
-			<span class="bar"></span>
-			<span class="bar"></span>
-		</a>
-		 <div class="navbar-links">
-		  <ul>
-			<li><a href="#" id="hKnap">Hjem</a></li>
-			<li><a href="#" id="iKnap">Info</a></li>
-			<li><a href="#" id="oKnap">Om os</a></li>
-			<li><a href="#" id="kKnap">Konktakt</a></li>
-		  </ul>
-		 </div>
-	</nav>
 	
-	<button id="knapS" onClick="sprog()">
-		<p id="sprogText">DK</p>
-	</button>
-		
-	<button id="knapM" onClick="Mode()">
-		<p id="modeText">LM</p>	
-	</button>
-		
+	
+
+<div class="topnav">
+  <a href="#home" class="active">Logo</a>
+  <div id="myLinks">
+	<ul>
+    <li class="menuboks" ><a href="#news">News</a></li>
+    <li class="menuboks"><a href="#contact">Contact</a></li>
+    <li class="menuboks"><a href="#about">About</a></li>
+	</ul>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+  <img class="fa fa-bars" src="../../Hjemmesiden/Menu Icon Phone.png" width="20" height="11" alt="Ikke fundet"/> 
+  </a>
+</div>
+
+	
 </body>
 </html>
