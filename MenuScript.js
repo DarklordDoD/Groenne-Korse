@@ -12,11 +12,15 @@ togglebutton.addEventListener('click',() => {
 const alleSprog = ["DK","EN"];
 let sprogLength = alleSprog.length;
 let valgtSprog = 1;
-const titelSprog = ["Mærke Navn","Brand Name",]
+const titelSprog = ["Mærke Navn","Brand Name",];
+const menuHjem = ["Hjem","Home",];
+const menuInfo = ["Info","Info",];
+const menuOm = ["Om Os","About Us",];
+const menuKon = ["Kontakt","Contact",];
 
 function sprog(){	
 	//roter mellem sprogene
-	if (valgtSprog == sprogLength){
+	if (valgtSprog >= sprogLength){
 		valgtSprog = 1;
 	} else {
 		valgtSprog += 1;
@@ -24,4 +28,8 @@ function sprog(){
 	//ændre teksten
 	document.getElementById("sprogText").innerHTML = alleSprog[valgtSprog-1];
 	document.getElementById("brandTitle").innerHTML = titelSprog[valgtSprog-1];
+	document.getElementById("hKnap").innerHTML = menuHjem[valgtSprog-1];
+	document.getElementById("iKnap").innerHTML = menuInfo[valgtSprog-1];
+	document.getElementById("oKnap").innerHTML = menuOm[valgtSprog-1];
+	document.getElementById("kKnap").innerHTML = menuKon[valgtSprog-1];
 }
