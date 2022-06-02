@@ -65,6 +65,14 @@ body
   color: white;
 }
 
+#search-boks
+{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	
+	border-radius: 15px;
+}
 
 /*---------------------------------------------------------------------*/
 /*----------------------------(Body)----------------------------------*/
@@ -104,6 +112,11 @@ body
 	{
 		list-style: none;
 	}
+	
+	#search-boks
+	{
+		display: none;
+	}
 }
 
 
@@ -127,6 +140,7 @@ body
 		left: 100px;
 		list-style: none;
 	}	
+	
 }
 
 
@@ -150,6 +164,7 @@ body
 		left: 100px;
 		list-style: none;
 	}	
+	
 }
 
 
