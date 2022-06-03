@@ -17,10 +17,18 @@ body
 	font-family: Mulish;
 	border: solid 0px;
 	border-color: purple;
+	background-color: white;
 }
 
 /*--------------------------------------------------------------------*/	
 /*----------------------------(Header)--------------------------------*/
+
+#Logo 
+{
+	position: absolute;
+	top: 0px;
+	left: 10px;
+}
 
 .mobile-container {
   max-width: 480px;
@@ -38,12 +46,13 @@ body
 }
 
 .topnav a {
-  color: black;
-  padding: 5px 16px;
-  text-decoration: none;
-  font-size: 27px;
-  font-family: Mulish;
-  display: block;
+  	color: #2c352c;
+  	padding: 5px 16px;
+  	text-decoration: none;
+  	font-size: 27px;
+  	display: block;
+  	height: 46px;
+	font-family: Mulish;
 }
 
 .topnav a.icon {
@@ -123,15 +132,20 @@ body
 @media screen and (max-width: 767px) and (min-width: 428px)
 {
 	
-	
 	#myLinks 
 	{
   		display: none;
 	}
 	
+	.menuboks a
+	{	
+  		color: white;
+	}	
+	
 	#myLinks ul
 	{
 		list-style: none;
+		color: white;
 	}
 	
 	#knapS
@@ -154,9 +168,8 @@ body
 
 /*Tablet*/
 @media screen and (min-width: 768px)
-{
-	
-	
+
+	{
 	#bMenu
 	{
 		display: none;
@@ -177,9 +190,7 @@ body
 
 /*PC*/
 @media screen and (min-width: 1700px)
-{
-	
-	
+	{
 	#bMenu
 	{
 		display:none;
