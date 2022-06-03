@@ -99,10 +99,11 @@ body
 #knapS
 {
 	position: fixed;
-	right: 0px;
 	height: 35px;
 	background-color: #555;
-	top: 120px;
+	top: 50px;
+	width: 50px;
+	right: 0px;
 }
 
 #sprogText 
@@ -133,6 +134,12 @@ body
 		list-style: none;
 	}
 	
+	#knapS
+	{
+		width: 50px;
+		height: 50px;
+	}
+	
 	#search-boks
 	{
 		right: 220px;
@@ -160,7 +167,6 @@ body
 		left: 100px;
 		list-style: none;
 	}	
-	
 }
 
 
