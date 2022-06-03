@@ -17,10 +17,18 @@ body
 	font-family: Mulish;
 	border: solid 0px;
 	border-color: purple;
+	background-color: white;
 }
 
 /*--------------------------------------------------------------------*/	
 /*----------------------------(Header)--------------------------------*/
+
+#Logo 
+{
+	position: absolute;
+	top: 0px;
+	left: 10px;
+}
 
 .mobile-container {
   max-width: 480px;
@@ -38,11 +46,12 @@ body
 }
 
 .topnav a {
-  color: white;
+  color: #2c352c;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
   display: block;
+  height: 46px;
 }
 
 .topnav a.icon {
@@ -61,7 +70,7 @@ body
 
 
 .active {
-  background-color: #04AA6D;
+  background-color: lightgray;
   color: white;
 }
 
@@ -121,7 +130,6 @@ body
 /*Mobil*/
 @media screen and (max-width: 767px) and (min-width: 428px)
 {
-	body{background-color: red}
 	.toggle-button{display: flex}
 	
 	#myLinks 
@@ -149,9 +157,7 @@ body
 
 /*Tablet*/
 @media screen and (min-width: 768px)
-{
-	body{background-color: yellow}
-	
+{	
 	#bMenu
 	{
 		display: none;
@@ -173,8 +179,6 @@ body
 /*PC*/
 @media screen and (min-width: 1700px)
 {
-	body{background-color: green}
-	
 	#bMenu
 	{
 		display:none;
