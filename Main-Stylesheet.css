@@ -38,10 +38,11 @@ body
 }
 
 .topnav a {
-  color: white;
-  padding: 14px 16px;
+  color: black;
+  padding: 5px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 27px;
+  font-family: Mulish;
   display: block;
 }
 
@@ -61,7 +62,7 @@ body
 
 
 .active {
-  background-color: #04AA6D;
+  background-color: white;
   color: white;
 }
 
@@ -77,10 +78,10 @@ body
 /*---------------------------------------------------------------------*/
 /*----------------------------(Body)----------------------------------*/
 
-#sildeshow-boks
+.title-boks
 {
-	border: solid 4px;
-	border-color: purple;
+	position: absolute;
+	margin-left: 40%;
 }
 
 /*---------------------------------------------------------------------*/
@@ -121,8 +122,7 @@ body
 /*Mobil*/
 @media screen and (max-width: 767px) and (min-width: 428px)
 {
-	body{background-color: red}
-	.toggle-button{display: flex}
+	
 	
 	#myLinks 
 	{
@@ -144,13 +144,18 @@ body
 	{
 		right: 220px;
 	}
+	
+	.title-boks
+	{
+		margin-left: 40%;
+	}
 }
 
 
 /*Tablet*/
 @media screen and (min-width: 768px)
 {
-	body{background-color: yellow}
+	
 	
 	#bMenu
 	{
@@ -173,7 +178,7 @@ body
 /*PC*/
 @media screen and (min-width: 1700px)
 {
-	body{background-color: green}
+	
 	
 	#bMenu
 	{
@@ -190,6 +195,11 @@ body
 		left: 100px;
 		list-style: none;
 	}	
+	
+	.title-boks
+	{
+		margin-left: 43%;
+	}
 	
 }
 
