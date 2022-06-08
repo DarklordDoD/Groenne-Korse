@@ -86,10 +86,15 @@ body
 /*---------------------------------------------------------------------*/
 /*----------------------------(Body)----------------------------------*/
 
-.title-boks
+.container-konktakt
 {
-	position: absolute;
-	margin-left: 40%;
+	height: 100%;
+	width: 100%;
+	
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto;
+	font-family: Mulish;
 }
 
 /*---------------------------------------------------------------------*/
@@ -267,10 +272,6 @@ body
 		list-style: none;
 	}	
 	
-	.title-boks
-	{
-		margin-left: 43%;
-	}
 	
 	#footerboks
 	{
