@@ -71,8 +71,7 @@ body
 
 
 .active {
-  background-color: white;
-  color: white;
+  background-color: lightgray;
 }
 
 #search-boks
@@ -101,7 +100,32 @@ body
 /*---------------------------------------------------------------------*/
 /*----------------------------(Footer)----------------------------------*/
 
+#footerboks
+{
+	position: absolute;
+	background-color: darkgray;
+	width: 100%;
+	bottom: 0px;
+}
 
+.personInfo
+{
+	list-style: none;
+}
+
+#logoFacebook
+{
+	position: absolute;
+	right: 20px;
+	top: 10px;
+}
+
+#logoLokal
+{
+	position: absolute;
+	right: 90px;
+	top: 10px;
+}
 
 /*---------------------------------------------------------------------*/
 /*----------------------------(Sprog)----------------------------------*/
@@ -159,14 +183,22 @@ body
 		right: 220px;
 	}
 	
+	.title-boks
+	{
+		margin-left: 40%;
+	}
 
+	#footerboks
+	{
+		height: 250px;
+	}
 }
 
 
 /*Tablet*/
 @media screen and (min-width: 768px)
-
-	{
+{
+		
 	#bMenu
 	{
 		display: none;
@@ -181,13 +213,35 @@ body
 		top: 0px;
 		left: 100px;
 		list-style: none;
-	}	
+	}
+	
+	#footerboks
+	{
+		height: 100px;
+	}
+	
+	.personInfo 
+	{
+		position: absolute;
+	}
+	
+	#JBH
+	{
+		left: 200px;
+	}
+
+	#CMB
+	{
+		left: 400px;
+	}
+		
 }
 
 
 /*PC*/
 @media screen and (min-width: 1700px)
-	{
+{
+		
 	#bMenu
 	{
 		display:none;
@@ -204,6 +258,26 @@ body
 		list-style: none;
 	}	
 	
+	
+	#footerboks
+	{
+		height: 100px;
+	}
+	
+	.personInfo 
+	{
+		position: absolute;
+	}
+	
+	#JBH
+	{
+		left: 200px;
+	}
+
+	#CMB
+	{
+		left: 400px;
+	}
 	
 }
 
