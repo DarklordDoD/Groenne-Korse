@@ -43,7 +43,8 @@ const menuInfo = ["Info","Info",];
 const menuOm = ["Om Os","About Us",];
 const menuKon = ["Kontakt","Contact",];
 
-//verdensmål side
+/*----------------------------(VerdensMål side)--------------------------------*/
+
 const verdensTittle = ["FN's Verdensmål","UN's Goals"];
 const verdensIntro = ["FN har 17 verdensmål, som er til for at sætte en kurs mod en mere bæredygtig udvikling for både mennesker og planeten vi bor på. Igennem vores arbejde med udvinding og genanvendelse af affaldsprodukter er vi med til at hjælpe til med 7 af disse verdensmål.","The UN has 17 goals, which are there to set a course towards a more sustainable development for both humans and the planet we live on. Through our work with extracting and recycling waste products, we help with 7 of those goals."];
 
@@ -65,21 +66,21 @@ const verdensMore = ["Læs mere om verdensmålene på:","Read more about the wor
 
 function sprog(){
 	
-	//roter mellem sprogene
+	/*----------------------------(roter mellem sprogene)--------------------------------*/
 	if (valgtSprog >= sprogLength){
 		valgtSprog = 1;
 	} else {
 		valgtSprog += 1;
 	}
 	
-	//ændre teksten
+	/*----------------------------(Menu)--------------------------------*/
 	document.getElementById("sprogText").innerHTML = alleSprog[valgtSprog-1];
 	document.getElementById("hKnap").innerHTML = menuHjem[valgtSprog-1];
 	document.getElementById("iKnap").innerHTML = menuInfo[valgtSprog-1];
 	document.getElementById("oKnap").innerHTML = menuOm[valgtSprog-1];
 	document.getElementById("kKnap").innerHTML = menuKon[valgtSprog-1];
 	
-	//verdensmål side
+	/*----------------------------(VerdensMål side)--------------------------------*/
 	document.getElementById("verdensMalTittel").innerHTML = verdensTittle[valgtSprog-1];
 	document.getElementById("vMIntro").innerHTML = verdensIntro[valgtSprog-1];
 	document.getElementById("vM6Text").innerHTML = verdens6[valgtSprog-1];
