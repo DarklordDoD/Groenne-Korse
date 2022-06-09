@@ -101,7 +101,6 @@ body
 
 .container-Index
 {
-	align-items: center;
 	font-family: Mulish;
 	color: white;
 	font-style: italic;
@@ -118,14 +117,13 @@ body
 #Opsaminling
 {
 	background-image: url("Opsammling2.jpg");
-	align-content: center;
 	text-align: center;
 	background-position: center;
 	padding-top: 50px;
 	padding-bottom: 50px;	
 	border: solid white 5px;
-	margin-left: 480px;
-	margin-right: 480px;
+	margin-left: 28%;
+	margin-right: 28%;
 	margin-top: 25px;
 	margin-bottom: 25px;
 }
@@ -133,14 +131,13 @@ body
 #metaler
 {
 	background-image: url("Metaler2.jpg");
-	align-content: center;
 	text-align: center;
 	background-position: center;
 	padding-top: 50px;
 	padding-bottom: 50px;	
 	border: solid white 5px;
-	margin-left: 480px;
-	margin-right: 480px;
+	margin-left: 28%;
+	margin-right: 28%;
 	margin-top: 25px;
 	margin-bottom: 25px;
 }
@@ -148,14 +145,13 @@ body
 #sommerdag
 {
 	background-image: url("Dansksommer2.jpg");
-	align-content: center;
 	text-align: center;
 	background-position: center;
 	padding-top: 50px;
 	padding-bottom: 50px;
 	border: solid white 5px;
-	margin-left: 480px;
-	margin-right: 480px;
+	margin-left: 28%;
+	margin-right: 28%;
 	margin-top: 25px;
 	margin-bottom: 25px;
 }
@@ -163,14 +159,13 @@ body
 #Opsaminling:hover
 {
 	background-image: url("Opsammling.jpg");
-	align-content: center;
 	text-align: center;
 	background-position: center;
 	padding-top: 50px;
 	padding-bottom: 50px;	
 	border: solid white 5px;
-	margin-left: 480px;
-	margin-right: 480px;
+	margin-left: 28%;
+	margin-right: 28%;
 	margin-top: 25px;
 	margin-bottom: 25px;
 }
@@ -178,14 +173,13 @@ body
 #metaler:hover
 {
 	background-image: url("Metaler.jpg");
-	align-content: center;
 	text-align: center;
 	background-position: center;
 	padding-top: 50px;
 	padding-bottom: 50px;	
 	border: solid white 5px;
-	margin-left: 480px;
-	margin-right: 480px;
+	margin-left: 28%;
+	margin-right: 28%;
 	margin-top: 25px;
 	margin-bottom: 25px;
 }
@@ -193,14 +187,13 @@ body
 #sommerdag:hover
 {
 	background-image: url("Dansksommer.jpg");
-	align-content: center;
 	text-align: center;
 	background-position: center;
 	padding-top: 50px;
 	padding-bottom: 50px;
 	border: solid white 5px;
-	margin-left: 480px;
-	margin-right: 480px;
+	margin-left: 28%;
+	margin-right: 28%;
 	margin-top: 25px;
 	margin-bottom: 25px;
 }
@@ -327,6 +320,50 @@ body
 		position: inherit;
 		padding: 10px 0px 0px 10px;
 	}
+	
+	
+	#Opsaminling
+	{
+		background-image: url("Opsammling2.jpg");
+		text-align: center;
+		background-position: center;
+		padding-top: 50px;
+		padding-bottom: 50px;
+		border: solid white 5px;
+		margin-top: 25px;
+		margin-bottom: 25px;
+		margin-left: 0px;
+		margin-right: 0px; 
+	}
+
+	#metaler
+	{
+		background-image: url("Metaler2.jpg");
+		text-align: center;
+		background-position: center;
+		padding-top: 50px;
+		padding-bottom: 50px;	
+		border: solid white 5px;
+		margin-top: 25px;
+		margin-bottom: 25px;
+		margin-left: 0px;
+		margin-right: 0px; 
+	}
+
+	#sommerdag
+	{
+		background-image: url("Dansksommer2.jpg");
+		text-align: center;
+		background-position: center;
+		padding-top: 50px;
+		padding-bottom: 50px;
+		border: solid white 5px;
+		margin-top: 25px;
+		margin-bottom: 25px;
+		margin-left: 0px;
+		margin-right: 0px; 
+	}
+
 }
 
 
