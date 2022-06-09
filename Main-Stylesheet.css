@@ -112,6 +112,7 @@ body
 .personInfo
 {
 	list-style: none;
+	position: absolute;
 }
 
 #logoFacebook
@@ -212,7 +213,13 @@ body
 
 	#footerboks
 	{
-		height: 250px;
+		height: 260px;
+	}
+	
+	.personInfo
+	{
+		position: inherit;
+		padding: 10px 0px 0px 10px;
 	}
 }
 
@@ -242,11 +249,6 @@ body
 		height: 100px;
 	}
 	
-	.personInfo 
-	{
-		position: absolute;
-	}
-	
 	#JBH
 	{
 		left: 200px;
@@ -255,8 +257,7 @@ body
 	#CMB
 	{
 		left: 400px;
-	}
-		
+	}		
 }
 
 
@@ -286,11 +287,6 @@ body
 		height: 100px;
 	}
 	
-	.personInfo 
-	{
-		position: absolute;
-	}
-	
 	#JBH
 	{
 		left: 200px;
@@ -299,8 +295,7 @@ body
 	#CMB
 	{
 		left: 400px;
-	}
-	
+	}	
 }
 
 
