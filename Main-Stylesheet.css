@@ -69,7 +69,6 @@ body
   	color: black;
 }
 
-
 .active {
   background-color: lightgray;
 }
@@ -80,7 +79,9 @@ body
 	right: 10px;
 	top: 10px;
 	
-	border-radius: 15px;
+	height: 25px;
+	width: 200px;
+	border-radius: 15px;	
 }
 
 /*---------------------------------------------------------------------*/
@@ -151,7 +152,7 @@ body
 
 #footerboks
 {
-	position: absolute;
+	position: inherit;
 	background-color: darkgray;
 	width: 100%;
 	bottom: 0px;
@@ -160,20 +161,21 @@ body
 .personInfo
 {
 	list-style: none;
+	position: absolute;
 }
 
 #logoFacebook
 {
 	position: absolute;
-	right: 20px;
-	top: 10px;
+	right: 60px;
+	margin: 10px 10px 10px 10px;
 }
 
 #logoLokal
 {
 	position: absolute;
-	right: 90px;
-	top: 10px;
+	right: 0px;
+	margin: 10px 10px 10px 10px;
 }
 
 /*---------------------------------------------------------------------*/
@@ -196,6 +198,26 @@ body
 	color: white;
 }
 
+/*---------------------------------------------------------------------*/
+/*----------------------------(Verdensmål Indhold)----------------------------------*/
+
+.verdensMal
+{
+	position: relative;
+	margin: 10px 10px 10px 10px;
+}
+
+.verdensMalIntro
+{
+	position: relative;
+	margin: 10px 10px 30px 10px;
+}
+
+.verdensMalText
+{
+	position: absolute;
+	margin: 0px 10px 10px 10px;
+}
 
 /*---------------------------------------------------------------------*/
 /*----------------------------(Media Screen)----------------------------------*/
@@ -229,7 +251,8 @@ body
 	
 	#search-boks
 	{
-		right: 220px;
+		right: 20%;
+		width: 60%;
 	}
 	
 	.title-boks
@@ -239,7 +262,13 @@ body
 
 	#footerboks
 	{
-		height: 250px;
+		height: 260px;
+	}
+	
+	.personInfo
+	{
+		position: inherit;
+		padding: 10px 0px 0px 10px;
 	}
 }
 
@@ -269,11 +298,6 @@ body
 		height: 100px;
 	}
 	
-	.personInfo 
-	{
-		position: absolute;
-	}
-	
 	#JBH
 	{
 		left: 200px;
@@ -282,8 +306,7 @@ body
 	#CMB
 	{
 		left: 400px;
-	}
-		
+	}		
 }
 
 
@@ -313,11 +336,6 @@ body
 		height: 100px;
 	}
 	
-	.personInfo 
-	{
-		position: absolute;
-	}
-	
 	#JBH
 	{
 		left: 200px;
@@ -326,8 +344,7 @@ body
 	#CMB
 	{
 		left: 400px;
-	}
-	
+	}	
 }
 
 
