@@ -87,18 +87,6 @@ body
 /*---------------------------------------------------------------------*/
 /*----------------------------(Body)----------------------------------*/
 
-.container-konktakt
-{
-	height: 100%;
-	width: 100%;
-	
-	display: grid;
-	grid-template-columns: auto;
-	grid-template-rows: auto;
-	font-family: Mulish;
-	padding-bottom: 200px;
-}
-
 .container-Index
 {
 	font-family: Mulish;
@@ -107,12 +95,8 @@ body
 	text-shadow: 0 0 3px #000000, 0 0 5px #000000;
 	padding-bottom: 120px;
 }
-	
 
-.subtext
-{
-	color: grey; font-size: 12px; margin-top: -10px;
-}
+/*--------------Homepage-----------------*/
 
 #Opsaminling
 {
@@ -197,6 +181,30 @@ body
 	margin-top: 25px;
 	margin-bottom: 25px;
 }
+
+/*-----------Kontakt-------------*/
+
+#platformer
+{
+	padding-top: 100px; padding-bottom: 100px;
+}
+
+.subtext
+{
+	color: grey; font-size: 12px; margin-top: -10px;
+}
+
+.container-konktakt
+{
+	height: 100%;
+	width: 100%;
+	
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto;
+	font-family: Mulish;
+}
+
 /*---------------------------------------------------------------------*/
 /*----------------------------(Footer)----------------------------------*/
 
