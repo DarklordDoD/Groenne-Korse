@@ -14,7 +14,7 @@ body
 {
 	margin: 0px;
 	padding: 0px;
-	font-family: Mulish;
+	font-family: Mulish,Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 	border: solid 0px;
 	border-color: purple;
 	background-color: white;
@@ -189,6 +189,7 @@ body
 	top: 50px;
 	width: 50px;
 	right: 0px;
+	z-index: 3;
 }
 
 #sprogText 
@@ -217,6 +218,43 @@ body
 {
 	position: absolute;
 	margin: 0px 10px 10px 10px;
+}
+
+/*---------------------------------------------------------------------*/
+/*----------------------------(Info Indhold)----------------------------------*/
+
+#infoStoelse
+{
+	height: 700px;
+}
+
+.indostriImg
+{
+	position: relative;
+	margin: 10px 10px 10px 10px;
+}
+
+#lastGravko
+{
+	float: left;
+}
+
+#afaldsStak
+{
+	float: right;
+}
+
+#metalDele
+{
+	float: left;
+}
+
+.infoText
+{
+	position: static;
+	margin: 10px 10px 10px 10px;
+	right: 400px;
+	top: 100px;
 }
 
 /*---------------------------------------------------------------------*/
