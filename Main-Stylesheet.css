@@ -97,6 +97,55 @@ body
 	font-family: Mulish;
 }
 
+.container-Index
+{
+	align-items: center;
+	font-family: Mulish;
+}
+
+.subtext
+{
+	color: grey; font-size: 12px; margin-top: -10px;
+}
+
+#Opsaminling
+{
+	background-image: url("Opsammling.jpg");
+	align-content: center;
+	text-align: center;
+	padding: 100px;
+	border: solid 5px;
+	margin-left: 200px;
+	margin-right: 200px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+#metaler
+{
+	background-image: url("Metaler.jpg");
+	align-content: center;
+	text-align: center;
+	padding: 100px;
+	border: solid 5px;
+	margin-left: 200px;
+	margin-right: 200px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+#sommerdag
+{
+	background-image: url("Dansksommer.jpg");
+	align-content: center;
+	text-align: center;
+	padding: 100px;
+	border: solid 5px;
+	margin-left: 200px;
+	margin-right: 200px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
 /*---------------------------------------------------------------------*/
 /*----------------------------(Footer)----------------------------------*/
 
