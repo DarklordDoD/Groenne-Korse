@@ -20,6 +20,17 @@ window.addEventListener("resize", () => {
 	}
 });
 
+/*--------------------------------------------------------------------*/	
+/*----------------------------(Footer)--------------------------------*/
+
+var sreenH = window.innerHeight;
+var docH = (document.height !== undefined) ? document.height : document.body.offsetHeight;
+
+if (docH > sreenH){
+		document.getElementById("footerboks").style.position = "inherit";
+	} else {
+		document.getElementById("footerboks").style.position = "fixed";
+}
 
 /*--------------------------------------------------------------------*/	
 /*----------------------------(Sprog)--------------------------------*/
