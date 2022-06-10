@@ -4,55 +4,73 @@
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="Main-Stylesheet.css">
 <script src="MenuScript.js" defer></script>
-<title>kontakt</title>
+<title>Kontakt</title>
 </head>
 
 <body>
 	
 	
+<!-- menu bar -->
 <div class="topnav">
-	<a href="Index-page.html" class="active"><img src="logo green.svg" id="Logo" width="50" height="50" alt="Logo"></a>
+	
+	<div class="active">
+		<a></a>
+	</div>
+
 	<div id="myLinks">
 		<ul class="menuboks">
- 			<li><a href="Info-page.html" id="hKnap">Info</a></li>
-			<li><a href="VerdensMål-page.html" id="iKnap">Mål</a></li>
- 			<li><a href="#about" id="oKnap">Om os</a></li>
+ 			<li><a href="info.html" id="hKnap">Info</a></li>
+			<li><a href="verdensmal.html" id="iKnap">Mål</a></li>
+ 			<li><a href="omos.html" id="oKnap">Om Os</a></li>
 			<li><a href="kontakt.html" id="kKnap">Konktakt</a></li>
 		</ul>
   	</div>
+	
   	<a href="javascript:void(0);" class="icon" id="bMenu" onclick="myFunction()">
- 		<img class="fa fa-bars" src="../../Hjemmesiden/Menu Icon Phone.png" width="20" height="11" alt="Ikke fundet"/> 
+ 		<img class="fa fa-bars" src="Menu Icon Phone.svg" width="50" height="40" alt="Ikke fundet"/> 
 	</a>
+	
 </div>
+
+<!-- logo og søge box -->	
+<a href="Index.html"><img src="logo green.svg" id="Logo" width="50" height="50" alt="Logo"></a>
+	
 <input id="search-boks" type="text" placeholder="Search..">
 
+<!-- oversættelse -->
 <button id="knapS" onClick="sprog()">
 	<p id="sprogText">DK</p>
 </button>
 
 	
 <!----------- Main Body her ---------->	
-	
-	
 	<div class="container-konktakt">
 		<center>
-			<h1 style="margin-left: -50px">Konktakt</h1><br>
-			<p style="margin-top: -40px;">Hvis du har nogle spørgsmål, så kontakt os på de følgende platformer"</p>
+			<h1 id="kontaktTittel" style="margin-left: -50px">Konktakt</h1><br>
+			<p id="introKontakt" style="margin-top: -40px;">Hvis du har nogle spørgsmål, så kontakt os på de følgende platformer.</p>
 		</center>
 		
 	<table id="platformer">
 		<tr>
-		<th><img src="Lokation - Green.png" width="125" height="125" alt=""/><p>Lokation<br>Havevej 24 New Zeland</p></th>
-		<th><img src="Telefon - Green.png" width="125" height="125" alt=""/><p>Telefon<br>010 101 001</p></th>
-		<th><img src="Mail - Green.png" width="125" height="125" alt=""/><p>Email<br>QueenElisabit@yahoo.com</p></th>
+		<th><img src="Lokation - Green.png" loading="lazy"  width="125" height="125" alt=""/>
+			<p>Lokation</p><p class="subtext">Havevej 24 Aarhus</p></th>
+			
+		<th><img src="Telefon - Green.png" loading="lazy"  width="125" height="125" alt=""/>
+			<p>Telefon</p><p class="subtext">010 101 001</p></th>
+			
+		<th><img src="Mail - Green.png" loading="lazy"  width="125" height="125" alt=""/>
+			<p>Email</p><p class="subtext">Wastetreamnet@gmail</p></th>
 		</tr>
 		
 		<tr>
-		<th style="padding-top: 100px;"><img src="Facebook_ikon.png" width="125" height="125" alt=""/><p>Facebook</p><p class="subtext">God Save The Queen</p></th>
+		<th style="padding-top: 100px;"><img src="Facebook_ikon.png" loading="lazy"  width="125" height="125" alt=""/>
+			<p>Facebook</p><p class="subtext">Waste Treatment</p></th>
 			
-		<th style="padding-top: 100px;"><img src="Youtube_ikon.png" width="125" height="125" alt=""/><p>Youtube</p><p class="subtext">Waste Treatment</p></th>
+		<th style="padding-top: 100px;"><img src="Youtube_ikon.png" loading="lazy"  width="125" height="125" alt=""/>
+			<p>Youtube</p><p class="subtext">Waste Treatment</p></th>
 			
-		<th style="padding-top: 100px;"><img src="Instagram_ikon.png" width="125" height="125" alt=""/><p>Instagram</p><p class="subtext">Queen.UK</p></th>
+		<th style="padding-top: 100px;"><img src="Instagram_ikon.png" loading="lazy"  width="125" height="125" alt=""/>
+			<p>Instagram</p><p class="subtext">Waste Treatment</p></th>
 		</tr>
 	</table>
 	</div>
@@ -62,9 +80,9 @@
 <div id="footerboks">
 	
 	<!-- symbolder i footer -->
-	<img src="Facebook ikon.svg" id="logoFacebook" alt="Fasebook" width="50" height="50" href="Index-page.html"/>
+	<img src="Facebook ikon.svg" loading="lazy" id="logoFacebook" alt="Fasebook" width="50" height="50" href="Index-page.html"/>
 	
-	<img src="Lokation - Green.svg" id="logoLokal" alt="Fasebook" width="50" height="50" href="Index-page.html"/> 
+	<img src="Lokation - Green.svg" loading="lazy" id="logoLokal" alt="Fasebook" width="50" height="50" href="Index-page.html"/> 
 	
 	<!-- person -->	
 	<ul class="personInfo" id="VBP">
