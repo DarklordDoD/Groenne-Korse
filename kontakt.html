@@ -10,34 +10,44 @@
 <body>
 	
 	
+<!-- menu bar -->
 <div class="topnav">
-	<a href="Index-page.html" class="active"><img src="logo green.svg" id="Logo" width="50" height="50" alt="Logo"></a>
+	
+	<div class="active">
+		<a></a>
+	</div>
+
 	<div id="myLinks">
 		<ul class="menuboks">
- 			<li><a href="Info-page.html" id="hKnap">Info</a></li>
-			<li><a href="VerdensMål-page.html" id="iKnap">Mål</a></li>
- 			<li><a href="#about" id="oKnap">Om os</a></li>
+ 			<li><a href="info.html" id="hKnap">Info</a></li>
+			<li><a href="verdensmal.html" id="iKnap">Mål</a></li>
+ 			<li><a href="omos.html" id="oKnap">Om Os</a></li>
 			<li><a href="kontakt.html" id="kKnap">Konktakt</a></li>
 		</ul>
   	</div>
+	
   	<a href="javascript:void(0);" class="icon" id="bMenu" onclick="myFunction()">
- 		<img class="fa fa-bars" src="../../Hjemmesiden/Menu Icon Phone.png" width="20" height="11" alt="Ikke fundet"/> 
+ 		<img class="fa fa-bars" src="Menu Icon Phone.svg" width="50" height="40" alt="Ikke fundet"/> 
 	</a>
+	
 </div>
+
+<!-- logo og søge box -->	
+<a href="Index.html"><img src="logo green.svg" id="Logo" width="50" height="50" alt="Logo"></a>
+	
 <input id="search-boks" type="text" placeholder="Search..">
 
+<!-- oversættelse -->
 <button id="knapS" onClick="sprog()">
 	<p id="sprogText">DK</p>
 </button>
 
 	
 <!----------- Main Body her ---------->	
-	
-	
 	<div class="container-konktakt">
 		<center>
-			<h1 style="margin-left: -50px">Konktakt</h1><br>
-			<p style="margin-top: -40px;">Hvis du har nogle spørgsmål, så kontakt os på de følgende platformer"</p>
+			<h1 id="kontaktTittel" style="margin-left: -50px">Konktakt</h1><br>
+			<p id="introKontakt" style="margin-top: -40px;">Hvis du har nogle spørgsmål, så kontakt os på de følgende platformer.</p>
 		</center>
 		
 	<table id="platformer">

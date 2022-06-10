@@ -1,5 +1,6 @@
 // JavaScript Document
 
+
 /*--------------------------------------------------------------------*/	
 /*----------------------------(Header)--------------------------------*/
 
@@ -38,14 +39,20 @@ if (docH > sreenH){
 const alleSprog = ["DK","EN"];
 let sprogLength = alleSprog.length;
 let valgtSprog = 1;
-const menuHjem = ["Hjem","Home",];
-const menuInfo = ["Info","Info",];
+const menuHjem = ["Info","Info",];
+const menuInfo = ["Mål","Goals",];
 const menuOm = ["Om Os","About Us",];
 const menuKon = ["Kontakt","Contact",];
+
+/*----------------------------(Kontakt side)--------------------------------*/
+
+const contaktTittle = ["Kontakt","Contact"];
+const contaktIntro = ["Hvis du har nogle spørgsmål, så kontakt os på de følgende platformer.","If you have any questions, please contact us on the following platforms."]
 
 /*----------------------------(VerdensMål side)--------------------------------*/
 
 const verdensTittle = ["FN's Verdensmål","UN's Goals"];
+
 const verdensIntro = ["FN har 17 verdensmål, som er til for at sætte en kurs mod en mere bæredygtig udvikling for både mennesker og planeten vi bor på. Igennem vores arbejde med udvinding og genanvendelse af affaldsprodukter er vi med til at hjælpe til med 7 af disse verdensmål.","The UN has 17 goals, which are there to set a course towards a more sustainable development for both humans and the planet we live on. Through our work with extracting and recycling waste products, we help with 7 of those goals."];
 
 const verdens6 = ["6 (Rent vand og sanitet): Vi har det godt herhjemme i Danmark, når det kommer til rent drikkevand. Men vandmangel er stadig et problem for mere end 40% af verdenens befolkning. Vi tror på, at vi igennem vores bæredygtighed og genbrug sørger for at formindske mængden af skrald, som skader kvaliteten af vores grundvand.","6 (Clean water and sanitation): We are quite comfortable here in Denmark, when it comes to having clean drinking water. But water shortages are still a problem for more than 40% of the population of the world. We believe that with our sustainability and recycling, we are making sure to reduce the amount of waste, which hurts the quality of our groundwater."];
@@ -64,14 +71,27 @@ const verdens15 = ["15 (Livet på land): Jorden er mindst lige så livsvigtig fo
 
 const verdensMore = ["Læs mere om verdensmålene på:","Read more about the world goals at:"];
 
+/*----------------------------(Om Os side)--------------------------------*/
+
+const omP1 = ["Vi her i Waste Treatment DK beskæftiger os med udvinding og behandling af affald, og vi finder derigennem de materialer, som kan genanvendes. Det meste af dette affald finder vi begravet under jorden.","We here at Waste Treatment DK work with extraction and treatment og waste, and through that we find the materials that can be recycled. We find a large portion of our waste buried underground."];
+
+const omP2 = ["Vi drømmer om, at der i fremtiden ikke vil være brug for vores type virksomhed, til genanvendelse af råmaterialer udvundet fra affald. Derfor gør vi også opmærksom på hvad du selv kan gøre for klimaet, gennem affaldshåndtering i hverdagen.","We have a dream that our kind of business won’t be necessary for reapplication of the raw materials that can be found in waste products in the future. That is why we also try to encourage people to make an effort of their own, through how they privately handle waste."];
+
+const omP3 = ["Vi ved godt at vi alene ikke kan redde hele verdenen, men vi vil gøre så meget vi kan. Derfor er vores prioritering at gøre så processerne er så bæredygtige så muligt.","We are aware that we alone cannot save the world, but we will do what we can. That is why our priority is to make the individual processes as sustainable as possible."];
+
+/*----------------------------(roter mellem sprogene)--------------------------------*/
 function sprog(){
 	
-	/*----------------------------(roter mellem sprogene)--------------------------------*/
+	
 	if (valgtSprog >= sprogLength){
 		valgtSprog = 1;
 	} else {
 		valgtSprog += 1;
 	}
+	
+	var abenVindu = window.location.pathname;
+	var denneSide = abenVindu.split("/").pop();
+	console.log(denneSide);
 	
 	/*----------------------------(Menu)--------------------------------*/
 	document.getElementById("sprogText").innerHTML = alleSprog[valgtSprog-1];
@@ -80,17 +100,35 @@ function sprog(){
 	document.getElementById("oKnap").innerHTML = menuOm[valgtSprog-1];
 	document.getElementById("kKnap").innerHTML = menuKon[valgtSprog-1];
 	
+	/*----------------------------(Kontakt side)--------------------------------*/
+	if (denneSide == "kontakt.html"){
+		document.getElementById("kontaktTittel").innerHTML = contaktTittle[valgtSprog-1];
+		document.getElementById("introKontakt").innerHTML = contaktIntro[valgtSprog-1];
+	}
+	
 	/*----------------------------(VerdensMål side)--------------------------------*/
-	document.getElementById("verdensMalTittel").innerHTML = verdensTittle[valgtSprog-1];
-	document.getElementById("vMIntro").innerHTML = verdensIntro[valgtSprog-1];
-	document.getElementById("vM6Text").innerHTML = verdens6[valgtSprog-1];
-	document.getElementById("vM7Text").innerHTML = verdens7[valgtSprog-1];
-	document.getElementById("vM11Text").innerHTML = verdens11[valgtSprog-1];
-	document.getElementById("vM12Text").innerHTML = verdens12[valgtSprog-1];
-	document.getElementById("vM13Text").innerHTML = verdens13[valgtSprog-1];
-	document.getElementById("vM14Text").innerHTML = verdens14[valgtSprog-1];
-	document.getElementById("vM15Text").innerHTML = verdens15[valgtSprog-1];
-	document.getElementById("vMMore").innerHTML = verdensMore[valgtSprog-1];
+	if (denneSide == "verdensmal.html"){
+		document.getElementById("verdensMalTittel").innerHTML = verdensTittle[valgtSprog-1];
+		document.getElementById("vMIntro").innerHTML = verdensIntro[valgtSprog-1];
+		document.getElementById("vM6Text").innerHTML = verdens6[valgtSprog-1];
+		document.getElementById("vM7Text").innerHTML = verdens7[valgtSprog-1];
+		document.getElementById("vM11Text").innerHTML = verdens11[valgtSprog-1];
+		document.getElementById("vM12Text").innerHTML = verdens12[valgtSprog-1];
+		document.getElementById("vM13Text").innerHTML = verdens13[valgtSprog-1];
+		document.getElementById("vM14Text").innerHTML = verdens14[valgtSprog-1];
+		document.getElementById("vM15Text").innerHTML = verdens15[valgtSprog-1];
+		document.getElementById("vMMore").innerHTML = verdensMore[valgtSprog-1];
+	}
+	
+	/*----------------------------(Om Os side)--------------------------------*/
+	if (denneSide == "omos.html"){
+		document.getElementById("omOsP1").innerHTML = omP1[valgtSprog-1];
+		document.getElementById("omOsP2").innerHTML = omP2[valgtSprog-1];
+		document.getElementById("omOsP3").innerHTML = omP3[valgtSprog-1];
+	}
+	
+	/*----------------------------(Info side)--------------------------------*/
+	
 }
 
 
