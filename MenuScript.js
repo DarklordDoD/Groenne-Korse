@@ -89,9 +89,14 @@ function sprog(){
 		valgtSprog += 1;
 	}
 	
+	sprogSkift();
+}
+
+function sprogSkift(){
+	console.log("Sprog Loadet")
+	
 	var abenVindu = window.location.pathname;
 	var denneSide = abenVindu.split("/").pop();
-	console.log(denneSide);
 	
 	/*----------------------------(Menu)--------------------------------*/
 	document.getElementById("sprogText").innerHTML = alleSprog[valgtSprog-1];

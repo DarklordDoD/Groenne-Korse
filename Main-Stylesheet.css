@@ -305,9 +305,14 @@ body
 .infoText
 {
 	position: static;
-	margin: 10px 10px 10px 10px;
+	margin: 20px 20px 20px 20px;
 	right: 400px;
 	top: 100px;
+}
+
+#infoTittle2
+{
+	margin: 100px 20px 20px 20px;
 }
 
 /*---------------------------------------------------------------------*/
