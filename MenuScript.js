@@ -81,6 +81,8 @@ const omP3 = ["Vi ved godt at vi alene ikke kan redde hele verdenen, men vi vil 
 
 /*----------------------------(Info side)--------------------------------*/
 
+const infoTittel = ["Hvad laver vi","What are we doing"]
+
 const infoP1 = ["Det materiale som vi udvinder og genbruger kan komme mange steder fra. Alt fra gamle dåser til store fabriksmaskiner, som over tid er blevet for slidte. Man kan endda finde affald begravet under jorden, som førhen kunne have været blevet brugt til noget, som en skrue fra en traktor, som den tabte midt i høsten","The materials that we extract and recycle comes from many places. Everything from old aluminum cans to big factory machinery, which over time has stopped being functional. We even find waste buried underground, which has been used in the past, like a screw from a tractor, that it dropped during a harvest."];
 
 const infoP2 = ["Affaldet bliver sorteret før genanvendelse. Det gør man ved hjælp af roterende magneter, som er for enden af nogle ¨samlebånd¨. Der er kun nogle metaller som har magnetiske egenskaber. Disse er primært jern, nikkel og stål.","The materials that we extract and recycle comes from many places. Everything from old aluminum cans to big factory machinery, which over time has stopped being functional. We even find waste buried underground, which has been used in the past, like a screw from a tractor, that it dropped during a harvest."];
@@ -160,6 +162,7 @@ function sprogSkift(){
 	
 	/*----------------------------(Info side)--------------------------------*/
 	if (denneSide == "info.html"){
+		document.getElementById("infoTittel").innerHTML = infoTittel[valgtSprog-1];
 		document.getElementById("infoP1").innerHTML = infoP1[valgtSprog-1];
 		document.getElementById("infoP2").innerHTML = infoP2[valgtSprog-1];
 		document.getElementById("infoP3").innerHTML = infoP3[valgtSprog-1];
