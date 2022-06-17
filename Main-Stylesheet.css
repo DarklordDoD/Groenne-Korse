@@ -30,15 +30,6 @@ body
 	left: 10px;
 }
 
-.mobile-container {
-  max-width: 480px;
-  margin: auto;
-  background-color: #555;
-  height: 500px;
-  color: white;
-  border-radius: 10px;
-}
-
 .topnav {
   overflow: hidden;
   background-color: #333;
@@ -70,7 +61,7 @@ body
 }
 
 .active {
-  background-color: lightgray;
+  background-color: #91c251;
 }
 
 #search-boks
