@@ -20,6 +20,11 @@ body
 	background-color: white;
 }
 
+.infoBox
+{
+	margin: 0px 15% 0px 15%;
+}
+
 /*--------------------------------------------------------------------*/	
 /*----------------------------(Header)--------------------------------*/
 
@@ -52,7 +57,7 @@ body
   	font-size: 27px;
   	display: block;
   	height: 46px;
-	font-family: Mulish;
+	font-family: Mulish,Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 }
 
 .topnav a.icon {
