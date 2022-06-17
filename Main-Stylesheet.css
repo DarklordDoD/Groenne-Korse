@@ -20,9 +20,16 @@ body
 	background-color: white;
 }
 
+.bogrundBody
+{
+	background-color: #91c251;
+}
+
 .infoBox
 {
-	margin: 0px 15% 0px 15%;
+	margin: 0px 10% 0px 10%;
+	padding: 10px 5% 10px 5%;
+	background-color: white;
 }
 
 /*--------------------------------------------------------------------*/	
@@ -372,6 +379,11 @@ body
 	#footerboks
 	{
 		height: 260px;
+	}
+	
+	.infoBox
+	{
+		margin: 0px 0px 0px 0px;
 	}
 	
 	.personInfo
