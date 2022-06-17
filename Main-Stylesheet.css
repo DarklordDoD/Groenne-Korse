@@ -20,6 +20,18 @@ body
 	background-color: white;
 }
 
+.bogrundBody
+{
+	background-color: #91c251;
+}
+
+.infoBox
+{
+	margin: 0px 10% 0px 10%;
+	padding: 10px 5% 10px 5%;
+	background-color: white;
+}
+
 /*--------------------------------------------------------------------*/	
 /*----------------------------(Header)--------------------------------*/
 
@@ -43,7 +55,7 @@ body
   	font-size: 27px;
   	display: block;
   	height: 46px;
-	font-family: Mulish;
+	font-family: Mulish,Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
 }
 
 .topnav a.icon {
@@ -358,6 +370,11 @@ body
 	#footerboks
 	{
 		height: 260px;
+	}
+	
+	.infoBox
+	{
+		margin: 0px 0px 0px 0px;
 	}
 	
 	.personInfo
