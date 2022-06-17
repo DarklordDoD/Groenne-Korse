@@ -244,7 +244,7 @@ body
 
 #knapS
 {
-	position: fixed;
+	position: absolute;
 	height: 35px;
 	background-color: #555;
 	top: 50px;
@@ -375,6 +375,11 @@ body
 	.infoBox
 	{
 		margin: 0px 0px 0px 0px;
+	}
+	
+	.bogrundBody
+	{
+		background-color: white;
 	}
 	
 	.personInfo
