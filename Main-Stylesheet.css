@@ -22,7 +22,7 @@ body
 
 .bogrundBody
 {
-	background-color: #91c251;
+	background-color: #84a98c;
 }
 
 .infoBox
@@ -74,7 +74,7 @@ body
 }
 
 .active {
-  background-color: #91c251;
+  background-color: #84a98c;
 }
 
 #search-boks
@@ -248,9 +248,9 @@ body
 	position: absolute;
 	height: 35px;
 	background-color: #555;
-	top: 50px;
+	top: 5px;
 	width: 50px;
-	right: 0px;
+	right: 10px;
 	z-index: 3;
 }
 
