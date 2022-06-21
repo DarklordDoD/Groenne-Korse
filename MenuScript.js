@@ -39,8 +39,8 @@ if (docH > sreenH){
 const alleSprog = ["DK","EN"];
 let sprogLength = alleSprog.length;
 let valgtSprog = 1;
-const menuHjem = ["Info","Info",];
-const menuInfo = ["Mål","Goals",];
+const menuHjem = ["Virksomheden","Company",];
+const menuInfo = ["Verdensmål","Goals",];
 const menuOm = ["Om Os","About Us",];
 const menuKon = ["Kontakt","Contact",];
 
